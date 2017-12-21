@@ -40,6 +40,8 @@ ifeq (,$(platform))
             platform = pandora
         else ifneq (,$(findstring ODROIDC,$(HARDWARE)))
             platform = odroidc1
+	else ifneq (,$(findstring ODROID-XU4,$(HARDWARE)))
+            platform = odroidxu3
         else ifneq (,$(findstring ODROID-XU3,$(HARDWARE)))
             platform = odroidxu3
         else ifneq (,$(findstring ODROIDXU,$(HARDWARE)))
